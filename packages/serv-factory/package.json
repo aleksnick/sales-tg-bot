@@ -1,0 +1,41 @@
+{
+  "name": "serv-factory",
+  "version": "1.0.0",
+  "description": "",
+  "entry": "src/index.ts",
+  "main": "build/index.js",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "eslint": "npx eslint src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aleksnick",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^8.0.6",
+    "@nestjs/core": "^8.0.6",
+    "@nestjs/platform-express": "^8.0.6",
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "lodash": "4.17.21",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.3.0",
+    "shared-constants": "^1.0.0",
+    "shared-utils": "^1.0.0",
+    "telegraf": "4.4.0",
+    "telegraf-inline-menu": "6.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.13",
+    "@types/lodash": "4.14.171",
+    "@types/node": "16.4.1",
+    "eslint": "7.31.0",
+    "eslint-config-ts": "1.0.0",
+    "rollup": "2.53.3",
+    "rollup-plugin-typescript2": "0.30.0"
+  }
+}

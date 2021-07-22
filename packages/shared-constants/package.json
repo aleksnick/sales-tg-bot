@@ -1,0 +1,25 @@
+{
+  "name": "shared-constants",
+  "version": "1.0.0",
+  "description": "",
+  "entry": "src/index.ts",
+  "main": "build/index.cjs",
+  "types": "build/index.d.ts",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "eslint": "npx eslint src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aleksnick",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "7.31.0",
+    "eslint-config-ts": "1.0.0",
+    "rollup": "2.53.3",
+    "rollup-plugin-typescript2": "0.30.0",
+    "typescript": "4.3.5"
+  }
+}

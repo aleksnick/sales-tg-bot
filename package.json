@@ -1,0 +1,35 @@
+{
+  "name": "sales-tg-bot",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "type": "module",
+  "engines": {
+    "yarn": ">=1.22.10",
+    "node": "14.17.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn factory",
+    "factory": "yarn workspace serv-factory start",
+    "dev": "yarn && yarn build && yarn start",
+    "heroku": "./bin/heroku.sh",
+    "build": "node --es-module-specifier-resolution=node ./bin/build",
+    "watch": "node --es-module-specifier-resolution=node ./bin/watch",
+    "eslint": "node --es-module-specifier-resolution=node ./bin/eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksnick/sales-tg-bot.git"
+  },
+  "author": "aleksnick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleksnick/sales-tg-bot/issues"
+  },
+  "homepage": "https://github.com/aleksnick/sales-tg-bot#readme",
+  "dependencies": {}
+}
