@@ -10,21 +10,16 @@
     "start": "node src/index.js",
     "build": "rollup -c",
     "watch": "rollup -c -w",
+    "eslint": "npx eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aleksnick/sales-tg-bot.git"
   },
   "author": "aleksnick",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aleksnick/sales-tg-bot/issues"
-  },
-  "homepage": "https://github.com/aleksnick/sales-tg-bot#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "16.4.1",
+    "eslint": "7.31.0",
+    "eslint-config-n": "1.0.0",
     "fast-xml-parser": "3.19.0",
     "rollup": "2.53.3",
     "rollup-plugin-typescript2": "0.30.0",
