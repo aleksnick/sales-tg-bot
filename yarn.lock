@@ -173,6 +173,11 @@ express@4.17.1:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
+fast-xml-parser@^3.19.0:
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-3.19.0.tgz#cb637ec3f3999f51406dd8ff0e6fc4d83e520d01"
+  integrity sha512-4pXwmBplsCPv8FOY1WRakF970TjNGnGnfbOnLqjlYvMiF1SR3yOHyxMR/YCXpPTOspNF5gwudqktIP4VsWkvBg==
+
 finalhandler@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.1.2.tgz#b7e7d000ffd11938d0fdb053506f6ebabe9f587d"
@@ -418,6 +423,13 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
+telegraf-inline-menu@6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/telegraf-inline-menu/-/telegraf-inline-menu-6.3.0.tgz#e9cedb2086f482e9d95e3f03def6895cd69928ff"
+  integrity sha512-5n2mV8BS1mRGminS6nfQblfrNINBgFrWpyWre0GXtAjLhj2rG8ERynGysQ7oOh7pSWrewQz8AeAU/NVRCXwfDw==
+  dependencies:
+    typegram "^3.0.2"
+
 telegraf@4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-4.4.0.tgz#a84228664a252062036b328fc364b5662ba3d22d"
@@ -446,7 +458,7 @@ type-is@~1.6.17, type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typegram@^3.4.0:
+typegram@^3.0.2, typegram@^3.4.0:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/typegram/-/typegram-3.4.2.tgz#b2c11e745c9b7aafb6f76eb973f61958431ea392"
   integrity sha512-Z+FaPrD+oyzvchLZHmfyz55MuPhJ51tYm6i+gbeZ0W8Yr4LLWQfI0mBlR2v08PzjHuRx26bmZBEM30jSrGbfbg==

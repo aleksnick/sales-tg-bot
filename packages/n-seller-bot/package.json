@@ -1,17 +1,12 @@
 {
-  "name": "sales-tg-bot",
+  "name": "n-seller-bot",
   "version": "1.0.0",
   "description": "",
+  "main": "src/index.js",
   "private": "true",
-  "engines": {
-    "yarn": ">=1.22.10",
-    "node": "14.17.1"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
+  "type": "module",
   "scripts": {
-    "heroku": "./bin/heroku.sh",
+    "start": "node --es-module-specifier-resolution=node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +19,12 @@
     "url": "https://github.com/aleksnick/sales-tg-bot/issues"
   },
   "homepage": "https://github.com/aleksnick/sales-tg-bot#readme",
-  "dependencies": {
+  "devDependencies": {
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "n-config": "1.0.0",
+    "n-shared": "1.0.0",
+    "telegraf": "4.4.0",
+    "telegraf-inline-menu": "6.3.0"
   }
 }
