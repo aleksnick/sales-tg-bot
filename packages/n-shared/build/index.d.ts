@@ -1,1 +1,2 @@
-export declare const getData: () => any;
+declare const getData: () => any;
+export default getData;

@@ -1,6 +1,6 @@
 import { Telegraf, Context as BaseContext } from 'telegraf';
 import { MenuTemplate, MenuMiddleware } from 'telegraf-inline-menu';
-import { getData } from 'n-shared';
+import getData from 'n-shared';
 
 const menuTemplate = new MenuTemplate<BaseContext>((ctx) => `Hey ${ctx.from?.first_name}!`);
 
