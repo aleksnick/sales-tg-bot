@@ -1,8 +1,8 @@
-import { Telegraf } from 'telegraf';
+import { Telegraf, Context as BaseContext } from 'telegraf';
 import {MenuTemplate, MenuMiddleware} from 'telegraf-inline-menu';
 import { getData } from 'n-shared';
 
-const menuTemplate = new MenuTemplate(ctx => `Hey ${ctx.from.first_name}!`)
+const menuTemplate = new MenuTemplate<BaseContext>(ctx => `Hey ${ctx.from?.first_name}!`)
 
 menuTemplate.interact('I am excited!', 'a', {
 	do: async ctx => {
@@ -11,7 +11,7 @@ menuTemplate.interact('I am excited!', 'a', {
 	}
 });
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Telegraf(process.env.BOT_TOKEN!);
 
 bot.command('quit', (ctx) => {
   ctx.telegram.leaveChat(ctx.message.chat.id);
@@ -33,7 +33,7 @@ bot.catch(error => {
 
 async function startup() {
 	await bot.launch();
-	console.log(new Date(), 'Bot started as', bot.botInfo.username);
+	console.log(new Date(), 'Bot started as', bot.botInfo?.username);
 }
 
 startup();

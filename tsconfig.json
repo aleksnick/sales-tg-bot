@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "removeComments": false,
+    "target": "esnext",
+    "module": "esnext",
+    "pretty": true,
+    "strict": true
+  },
+  "include": ["./test.ts"],
+  "exclude": ["node_modules", "./bin", "./scripts", "./config", "./packages"]
+}

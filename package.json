@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private": "true",
+  "type": "module",
   "engines": {
     "yarn": ">=1.22.10",
     "node": "14.17.1"
@@ -11,7 +12,11 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "yarn start-bot",
+    "start-bot": "yarn build && yarn workspace n-seller-bot start",
     "heroku": "./bin/heroku.sh",
+    "build": "node --es-module-specifier-resolution=node ./bin/build",
+    "watch": "node --es-module-specifier-resolution=node ./bin/watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
