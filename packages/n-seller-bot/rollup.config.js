@@ -5,7 +5,7 @@ export default {
 	input: pkg.entry,
 
 	plugins: [
-		typescript()
+		typescript(),
 	],
 
   output: [
