@@ -1,3 +1,4 @@
+// import { Context } from 'telegraf';
 import anyPhrase from 'src/utils/anyPhrase';
 
 interface IPhrase {
@@ -24,5 +25,8 @@ const phrases: IPhrase[] = [
     ]),
   },
 ];
+
+// const createPhrasesMiddleware = () => (ctx: Context) => {
+// }
 
 export default phrases;

@@ -19,5 +19,5 @@
     "strict": true
   },
   "include": ["./test.ts"],
-  "exclude": ["node_modules", "./bin", "./scripts", "./config", "./packages"]
+  "exclude": ["node_modules", "./bin", "./scripts", "./config"]
 }
