@@ -1,0 +1,35 @@
+{
+  "name": "n-seller-bot",
+  "version": "1.0.0",
+  "description": "",
+  "entry": "src/index.ts",
+  "main": "build/index.js",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "eslint": "npx eslint src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aleksnick",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "10.0.0",
+    "express": "4.17.1",
+    "lodash": "4.17.21",
+    "n-config": "1.0.0",
+    "n-shared": "1.0.0",
+    "telegraf": "4.4.0",
+    "telegraf-inline-menu": "6.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.13",
+    "@types/lodash": "4.14.171",
+    "@types/node": "16.4.1",
+    "eslint": "7.31.0",
+    "eslint-config-n": "1.0.0",
+    "rollup": "2.53.3"
+  }
+}
