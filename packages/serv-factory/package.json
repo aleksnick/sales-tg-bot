@@ -25,6 +25,7 @@
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.3.0",
     "shared-constants": "^1.0.0",
+    "shared-types": "1.0.0",
     "shared-utils": "^1.0.0",
     "telegraf": "4.4.0",
     "telegraf-inline-menu": "6.3.0"

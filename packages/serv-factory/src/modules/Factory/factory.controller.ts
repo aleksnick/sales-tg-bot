@@ -1,7 +1,7 @@
 import {
   Controller, Post, Param, Body,
 } from '@nestjs/common';
-import { BotType } from 'shared-constants';
+import { BotType } from 'shared-types';
 import { FactoryService } from './factory.service';
 
 @Controller('bot')

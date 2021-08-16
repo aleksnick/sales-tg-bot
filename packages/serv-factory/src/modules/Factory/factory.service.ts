@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { BotTypes } from 'shared-constants';
+import { BotTypes } from 'shared-types';
 import { Bot } from 'src/@types/Bot';
 import { CreateOptions } from 'src/@types/CreateOptions';
 import { TelegramBotService } from 'src/modules/TelegramBot/telegramBot.service';

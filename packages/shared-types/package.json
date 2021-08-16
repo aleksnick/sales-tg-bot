@@ -1,5 +1,5 @@
 {
-  "name": "shared-utils",
+  "name": "shared-types",
   "version": "1.0.0",
   "description": "",
   "entry": "src/index.ts",
@@ -16,8 +16,6 @@
   "author": "aleksnick",
   "license": "MIT",
   "dependencies": {
-    "fast-xml-parser": "3.19.0",
-    "shared-types": "1.0.0"
   },
   "devDependencies": {
     "@types/node": "16.4.1",

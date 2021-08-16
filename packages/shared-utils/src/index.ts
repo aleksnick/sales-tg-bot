@@ -1,10 +1,6 @@
 import parser from 'fast-xml-parser';
 import fs from 'fs';
-import {
-  TildaYML, TildaData, Ware, Category,
-} from './@types/formats/tildaYML';
-
-export { Ware, Category };
+import { TildaYML, TildaData } from './@types/formats/tildaYML';
 
 export const getDataFromTildaYML = (): TildaData => {
   const file = fs.readFileSync('../../files/example.yml');

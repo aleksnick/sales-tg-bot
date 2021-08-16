@@ -9,9 +9,11 @@ export class TelegramMenuService {
   constructor(private readonly catalogService: CatalogService) {}
 
   registr = (bot: TelegramBotWorker) => {
-    const groups = this.catalogService.getCategories();
-    console.log('>>> groups', groups);
+    const categories = this.catalogService.getCategories();
+    console.log('>>> categories', categories);
 
-    registrMenu(createMainMenu)(bot);
+    registrMenu(createMainMenu({
+      categories,
+    }))(bot);
   };
 }

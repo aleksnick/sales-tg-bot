@@ -1,9 +1,9 @@
 import { MenuMiddleware } from 'telegraf-inline-menu';
 import { RegistrMiddleWare } from 'src/@types/Middleware';
-import { MenuCreator } from '../@types/Menu';
+import { Menu } from '../@types/Menu';
 
-const registrMenuMiddleware = (createMenu: MenuCreator): RegistrMiddleWare => (bot) => {
-  const menuMiddleware = new MenuMiddleware('/', createMenu());
+const registrMenuMiddleware = (menu: Menu): RegistrMiddleWare => (bot) => {
+  const menuMiddleware = new MenuMiddleware('/', menu);
 
   bot.command('start', (ctx, next) => {
     menuMiddleware.replyToContext(ctx);
