@@ -10,7 +10,7 @@ type Bots = { [id: string]: Bot };
 export class FactoryService {
   private readonly bots: Bots = {};
 
-  constructor(private telegramBotService: TelegramBotService) {}
+  constructor(private readonly telegramBotService: TelegramBotService) {}
 
   createBots = async (config: CreateOptions[]): Promise<void> => {
     config.forEach(async ({ id, type, ...options }) => {

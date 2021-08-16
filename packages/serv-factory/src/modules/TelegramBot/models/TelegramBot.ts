@@ -1,4 +1,5 @@
 import { Telegraf } from 'telegraf';
+import { Context } from 'src/@types/Context';
 // import { getDataFromTildaYML } from 'shared';
 import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
 import { Bot, BotOptions } from 'src/@types/Bot';
@@ -9,7 +10,7 @@ class TelegramBot implements Bot {
   public bot: TelegramBotWorker;
 
   constructor({ token }: TelegramBotOptions) {
-    const bot = new Telegraf(token);
+    const bot = new Telegraf<Context>(token);
 
     bot.command('quit', (ctx) => {
       ctx.telegram.leaveChat(ctx.message.chat.id);

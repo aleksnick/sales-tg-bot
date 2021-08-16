@@ -1,5 +1,5 @@
 import { RegistrMiddleWare } from 'src/@types/Middleware';
-import phrases from './phrases';
+import phrases from '../phrases';
 
 const registrPhrasesMiddleware: RegistrMiddleWare = (bot) => {
   bot.on('text', async (ctx, next) => {
@@ -7,7 +7,7 @@ const registrPhrasesMiddleware: RegistrMiddleWare = (bot) => {
     if (phrase) {
       ctx.telegram.sendMessage(ctx.message.chat.id, phrase.res());
     }
-    await next();
+    next();
   });
 };
 

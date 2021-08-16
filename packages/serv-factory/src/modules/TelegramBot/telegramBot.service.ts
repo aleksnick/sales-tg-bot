@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { BotOptions } from 'src/@types/Bot';
 import { TelegramMenuService } from 'src/modules/TelegramMenu/telegramMenu.service';
 import { TelegramPhrasesService } from 'src/modules/TelegramPhrases/telegramPhrases.service';
-import TelegramBot from './telegramBot.controller';
+import TelegramBot from './models/TelegramBot';
 
 @Injectable()
 export class TelegramBotService {

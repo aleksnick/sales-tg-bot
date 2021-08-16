@@ -1,9 +1,9 @@
-interface IParam {
+export interface Param {
   name: string;
   value: string;
 }
 
-interface IWare {
+export interface Ware {
   id: number;
   group_id: number;
   name: string;
@@ -14,20 +14,20 @@ interface IWare {
   price: string;
   currencyId: string;
   categoryId: string;
-  param: IParam[];
+  param: Param[];
 }
 
-interface ICurrency {
+export interface Currency {
   id: string;
   rate: number;
 }
 
-interface ICategory {
+export interface Category {
   id: number;
   value: string;
 }
 
-export interface ITildaYML {
+export interface TildaYML {
   yml_catalog: {
     shop: {
       name: string;
@@ -36,16 +36,16 @@ export interface ITildaYML {
       platform: string;
       version: number;
       currencies: {
-        currency: ICurrency;
+        currency: Currency;
       }
       categories: {
-        category: ICategory[];
+        category: Category[];
       }
       offers: {
-        offer: IWare[]
+        offer: Ware[]
       }
     }
   }
 }
 
-export type TTildaData = ITildaYML['yml_catalog']['shop'];
+export type TildaData = TildaYML['yml_catalog']['shop'];

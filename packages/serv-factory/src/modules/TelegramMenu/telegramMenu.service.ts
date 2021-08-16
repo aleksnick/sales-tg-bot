@@ -1,8 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
-import registrMenu from './telegramMenu.controller';
+import { CatalogService } from 'src/modules/Catalog/catalog.service';
+import registrMenu from './utils/registrMenu';
+import createMainMenu from './templates/Main';
 
 @Injectable()
 export class TelegramMenuService {
-  registr = (bot: TelegramBotWorker) => registrMenu(bot);
+  constructor(private readonly catalogService: CatalogService) {}
+
+  registr = (bot: TelegramBotWorker) => {
+    const groups = this.catalogService.getCategories();
+    console.log('>>> groups', groups);
+
+    registrMenu(createMainMenu)(bot);
+  };
 }

@@ -1,8 +1,12 @@
 import parser from 'fast-xml-parser';
 import fs from 'fs';
-import { ITildaYML, TTildaData } from './@types/formats/tildaYML';
+import {
+  TildaYML, TildaData, Ware, Category,
+} from './@types/formats/tildaYML';
 
-export const getDataFromTildaYML = (): TTildaData => {
+export { Ware, Category };
+
+export const getDataFromTildaYML = (): TildaData => {
   const file = fs.readFileSync('../../files/example.yml');
   const data = parser.parse(file.toString(), {
     attributeNamePrefix: '',
@@ -10,7 +14,7 @@ export const getDataFromTildaYML = (): TTildaData => {
     ignoreAttributes: false,
     parseAttributeValue: true,
     allowBooleanAttributes: true,
-  }) as ITildaYML;
+  }) as TildaYML;
   return data.yml_catalog.shop;
 };
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2021-07-23 20:10">
+<yml_catalog date="2021-08-15 14:53">
 	<shop>
 		<name>DearKids.ru</name>
-		<company>d</company>
+		<company>dearkids</company>
 		<url>https://dearkids.ru</url>
 		<platform>Tilda Publishing</platform>
 		<version>1.0</version>
@@ -10,12 +10,10 @@
 			<currency id="RUB" rate="1"/>
 		</currencies>
 		<categories>
-			<category id="501815263866">Весна-Лето 2020</category>
 			<category id="409644805430">Боди</category>
 			<category id="794461785760">Слипы</category>
 			<category id="637815434313">Костюмы</category>
 			<category id="105473662985">Носочки</category>
-			<category id="564255104541">Yandex</category>
 			<category id="580688039727">All</category>
 			<category id="627113532065">Комбинезоны</category>
 		</categories>
@@ -32,7 +30,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=555482222370</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -50,7 +48,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=516357336211</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -68,7 +66,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=551188209988</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -86,7 +84,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=455045050608</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -104,7 +102,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=955970909505</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -122,7 +120,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=852364451983</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -140,7 +138,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=602770717040</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -158,7 +156,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=197199632534</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -176,7 +174,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=917095383416</url>
 			<price>2300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -194,7 +192,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=769063556737</url>
 			<price>1250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Кофта</param>
@@ -212,7 +210,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=397226585696</url>
 			<price>1250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Кофта</param>
@@ -230,7 +228,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=738332013219</url>
 			<price>1250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Кофта</param>
@@ -248,7 +246,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=614278316517</url>
 			<price>1250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Кофта</param>
@@ -266,7 +264,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=171371035584</url>
 			<price>1250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Кофта</param>
@@ -284,7 +282,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=654080871322</url>
 			<price>1250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Кофта</param>
@@ -302,7 +300,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=734027614815</url>
 			<price>1250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Кофта</param>
@@ -320,7 +318,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=764674564695</url>
 			<price>1150.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Штаны</param>
@@ -338,7 +336,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=260563942388</url>
 			<price>1150.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Штаны</param>
@@ -356,7 +354,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=275133389291</url>
 			<price>1150.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Штаны</param>
@@ -374,7 +372,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=623104812899</url>
 			<price>1150.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Штаны</param>
@@ -392,7 +390,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=685410482769</url>
 			<price>1150.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Штаны</param>
@@ -410,7 +408,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=209842241188</url>
 			<price>1150.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Штаны</param>
@@ -428,7 +426,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-465299111898-kostyum-dlya-malchika-milii-sin?editionuid=705670350038</url>
 			<price>1150.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Штаны</param>
@@ -446,7 +444,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-390786416216-bodi-golubie-kiti?editionuid=751892490074</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">50</param>
@@ -463,7 +461,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-390786416216-bodi-golubie-kiti?editionuid=771407247442</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -480,7 +478,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-390786416216-bodi-golubie-kiti?editionuid=261537357570</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -497,7 +495,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-390786416216-bodi-golubie-kiti?editionuid=686839529550</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -514,7 +512,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-390786416216-bodi-golubie-kiti?editionuid=429419506245</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">74</param>
@@ -531,7 +529,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-390786416216-bodi-golubie-kiti?editionuid=803177570634</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">80</param>
@@ -548,7 +546,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-390786416216-bodi-golubie-kiti?editionuid=994160113248</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">86</param>
@@ -565,7 +563,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=739774894075</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -584,7 +582,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=874533817041</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -603,7 +601,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=712124236733</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -622,7 +620,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=472402536554</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -641,7 +639,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=250373599157</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -660,7 +658,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=451185709404</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -679,7 +677,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=508800213412</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -698,7 +696,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=782159563736</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -717,7 +715,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=143355035284</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -736,7 +734,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=736635874253</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -755,7 +753,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=266843393246</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -774,7 +772,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=415551381325</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -793,7 +791,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=736983533921</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -812,7 +810,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=305741045373</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -831,7 +829,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=404351467191</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -850,7 +848,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=957590834341</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -869,7 +867,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=391648845956</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -888,7 +886,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=955092209500</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -907,7 +905,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=560170405705</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -926,7 +924,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=856957230085</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -945,7 +943,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=313375780588</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -964,7 +962,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=872488783520</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -983,7 +981,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=249254673389</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -1002,7 +1000,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=967711223818</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -1021,7 +1019,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=828874417922</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -1040,7 +1038,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=262307695479</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -1059,7 +1057,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=813056573685</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -1078,7 +1076,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=898951455487</url>
 			<price>2000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -1097,7 +1095,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=622078410421</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -1116,7 +1114,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=330161831872</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -1135,7 +1133,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=379574831732</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -1154,7 +1152,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=849797323965</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -1173,7 +1171,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=808261111086</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -1192,7 +1190,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=271735801729</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -1211,7 +1209,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=520859297333</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Трусики</param>
@@ -1230,7 +1228,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=997354046049</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -1249,7 +1247,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=886228032434</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -1268,7 +1266,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=958689402792</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -1287,7 +1285,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=994683681914</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -1306,7 +1304,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=157025320625</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -1325,7 +1323,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=620621865712</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -1344,7 +1342,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-328982098626-komplekt-iz-lna?editionuid=422811095941</url>
 			<price>1099.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Майка</param>
@@ -1363,7 +1361,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-533853004187-raduzhnii-kombinezon?editionuid=690639875644</url>
 			<price>1399.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>627113532065</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">50</param>
@@ -1380,7 +1378,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-533853004187-raduzhnii-kombinezon?editionuid=317878571113</url>
 			<price>1399.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>627113532065</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -1397,7 +1395,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-533853004187-raduzhnii-kombinezon?editionuid=633523241957</url>
 			<price>1399.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>627113532065</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -1414,7 +1412,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-533853004187-raduzhnii-kombinezon?editionuid=334141469439</url>
 			<price>1399.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>627113532065</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -1431,7 +1429,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-533853004187-raduzhnii-kombinezon?editionuid=211649245708</url>
 			<price>1399.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>627113532065</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">74</param>
@@ -1448,7 +1446,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-533853004187-raduzhnii-kombinezon?editionuid=244137811281</url>
 			<price>1399.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>627113532065</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">80</param>
@@ -1465,7 +1463,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-533853004187-raduzhnii-kombinezon?editionuid=930244505859</url>
 			<price>1399.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>627113532065</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">86</param>
@@ -1482,7 +1480,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-538314530647-pesochnik-dlya-devochki?editionuid=724291639828</url>
 			<price>1700.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">50</param>
@@ -1499,7 +1497,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-538314530647-pesochnik-dlya-devochki?editionuid=862207983246</url>
 			<price>1700.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -1516,7 +1514,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-538314530647-pesochnik-dlya-devochki?editionuid=494254566369</url>
 			<price>1700.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -1533,7 +1531,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-538314530647-pesochnik-dlya-devochki?editionuid=981547553637</url>
 			<price>1700.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -1550,7 +1548,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-538314530647-pesochnik-dlya-devochki?editionuid=849072256756</url>
 			<price>1700.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">74</param>
@@ -1567,7 +1565,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-538314530647-pesochnik-dlya-devochki?editionuid=338117402081</url>
 			<price>1700.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">80</param>
@@ -1584,7 +1582,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-538314530647-pesochnik-dlya-devochki?editionuid=827060861112</url>
 			<price>1700.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% лен, подклад - 100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">86</param>
@@ -1601,7 +1599,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-109010892099-slip-mashinki?editionuid=857397786621</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">50</param>
@@ -1618,7 +1616,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-109010892099-slip-mashinki?editionuid=521227370105</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -1635,7 +1633,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-109010892099-slip-mashinki?editionuid=497453568442</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -1652,7 +1650,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-109010892099-slip-mashinki?editionuid=856229760144</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -1669,7 +1667,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-109010892099-slip-mashinki?editionuid=363126638130</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">74</param>
@@ -1687,7 +1685,7 @@
 			<price>770.0000</price>
 			<oldprice>1100</oldprice>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -1704,7 +1702,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=498009596361</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">16-17</param>
@@ -1722,7 +1720,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=639045189216</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">17-18</param>
@@ -1740,7 +1738,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=558849401967</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">19</param>
@@ -1758,7 +1756,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=137707309294</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">20</param>
@@ -1776,7 +1774,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=487297372699</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">16-17</param>
@@ -1794,7 +1792,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=574421213908</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">17-18</param>
@@ -1812,7 +1810,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=445109238048</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">19</param>
@@ -1830,7 +1828,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-113733133715-nosochki?editionuid=105475652774</url>
 			<price>300.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">20</param>
@@ -1848,7 +1846,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-252878675268-slip-zveryata?editionuid=135439592888</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -1865,7 +1863,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-252878675268-slip-zveryata?editionuid=209364482156</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -1882,7 +1880,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-952228005728-slip-avokadushki?editionuid=290338795599</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -1899,7 +1897,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-952228005728-slip-avokadushki?editionuid=364592741841</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>794461785760</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -1916,7 +1914,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-120307916814-bodi-pingvini-na-severe?editionuid=287536910982</url>
 			<price>1000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -1933,7 +1931,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-120307916814-bodi-pingvini-na-severe?editionuid=178918539680</url>
 			<price>1000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -1950,7 +1948,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-120307916814-bodi-pingvini-na-severe?editionuid=350346081051</url>
 			<price>1000.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -1967,7 +1965,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-849085033088-bodi-okean?editionuid=485982158820</url>
 			<price>1500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">50</param>
@@ -1984,7 +1982,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-849085033088-bodi-okean?editionuid=927780893661</url>
 			<price>1500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -2001,7 +1999,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-849085033088-bodi-okean?editionuid=359614196794</url>
 			<price>1500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -2018,7 +2016,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-849085033088-bodi-okean?editionuid=550567066044</url>
 			<price>1500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -2035,7 +2033,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-849085033088-bodi-okean?editionuid=936311770498</url>
 			<price>1500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">74</param>
@@ -2052,7 +2050,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-849085033088-bodi-okean?editionuid=192041805647</url>
 			<price>1500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">80</param>
@@ -2069,7 +2067,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-849085033088-bodi-okean?editionuid=538258775108</url>
 			<price>1500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">86</param>
@@ -2086,7 +2084,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=943308239639</url>
 			<price>2100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -2104,7 +2102,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=353745133373</url>
 			<price>2100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -2122,7 +2120,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=244032346067</url>
 			<price>2100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -2140,7 +2138,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=188348174851</url>
 			<price>2100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -2158,7 +2156,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=182305955858</url>
 			<price>2100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -2176,7 +2174,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=460046180709</url>
 			<price>2100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -2194,7 +2192,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=193283148041</url>
 			<price>2100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Полный</param>
@@ -2212,7 +2210,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=403395810033</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Футболка</param>
@@ -2230,7 +2228,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=199573069008</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Футболка</param>
@@ -2248,7 +2246,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=559101949679</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Футболка</param>
@@ -2266,7 +2264,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=448503985087</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Футболка</param>
@@ -2284,7 +2282,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=810404100140</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Футболка</param>
@@ -2302,7 +2300,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=202188977114</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Футболка</param>
@@ -2320,7 +2318,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=912120090064</url>
 			<price>999.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Футболка</param>
@@ -2338,7 +2336,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=427233500398</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Шорты</param>
@@ -2356,7 +2354,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=449523397502</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Шорты</param>
@@ -2374,7 +2372,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=186540991364</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Шорты</param>
@@ -2392,7 +2390,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=504262724656</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Шорты</param>
@@ -2410,7 +2408,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=454069070522</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Шорты</param>
@@ -2428,7 +2426,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=840481579568</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Шорты</param>
@@ -2446,7 +2444,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-293502013881-komplekt-iz-konopli?editionuid=729150554323</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>637815434313</categoryId>
 			<param name="Состав">85% конопля, 15% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Комплект">Шорты</param>
@@ -2464,7 +2462,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-218027291250-bodi-polo-s-yubkoi?editionuid=660647273950</url>
 			<price>1200.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">50</param>
@@ -2481,7 +2479,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-218027291250-bodi-polo-s-yubkoi?editionuid=100303510790</url>
 			<price>1200.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -2498,7 +2496,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-218027291250-bodi-polo-s-yubkoi?editionuid=924839482466</url>
 			<price>1200.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -2515,7 +2513,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-218027291250-bodi-polo-s-yubkoi?editionuid=510399093023</url>
 			<price>1200.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -2532,7 +2530,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-218027291250-bodi-polo-s-yubkoi?editionuid=404412967519</url>
 			<price>1200.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">74</param>
@@ -2549,7 +2547,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-218027291250-bodi-polo-s-yubkoi?editionuid=615551339391</url>
 			<price>1200.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">80</param>
@@ -2566,7 +2564,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-218027291250-bodi-polo-s-yubkoi?editionuid=201507418379</url>
 			<price>1200.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">86</param>
@@ -2583,7 +2581,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=823935067770</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">16-17</param>
@@ -2601,7 +2599,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=980690032185</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">17-18</param>
@@ -2619,7 +2617,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=343092274947</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">19</param>
@@ -2637,7 +2635,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=985684451433</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">20</param>
@@ -2655,7 +2653,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=809106951952</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">16-17</param>
@@ -2673,7 +2671,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=405833156541</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">17-18</param>
@@ -2691,7 +2689,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=709217375404</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">19</param>
@@ -2709,7 +2707,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-443398374045-nosochki-letnie?editionuid=821050367046</url>
 			<price>250.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>105473662985</categoryId>
 			<param name="Состав">100% шерсть</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">20</param>
@@ -2727,7 +2725,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-631311669101-bodi-zaiki?editionuid=600637851416</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">50</param>
@@ -2744,7 +2742,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-631311669101-bodi-zaiki?editionuid=683172143271</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">56</param>
@@ -2761,7 +2759,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-631311669101-bodi-zaiki?editionuid=162140745445</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">62</param>
@@ -2778,7 +2776,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-631311669101-bodi-zaiki?editionuid=743480544790</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">68</param>
@@ -2795,7 +2793,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-631311669101-bodi-zaiki?editionuid=952243384528</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">74</param>
@@ -2812,7 +2810,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-631311669101-bodi-zaiki?editionuid=721569011871</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">80</param>
@@ -2829,7 +2827,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-631311669101-bodi-zaiki?editionuid=251075651338</url>
 			<price>1100.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>409644805430</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">86</param>
@@ -2965,7 +2963,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=762628943811</url>
 			<price>400.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">36-40</param>
@@ -2983,7 +2981,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=644695775941</url>
 			<price>400.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">41-44</param>
@@ -3001,7 +2999,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=391077040174</url>
 			<price>400.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">45-46</param>
@@ -3019,7 +3017,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=233600314322</url>
 			<price>400.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">47-48</param>
@@ -3037,7 +3035,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=301909474206</url>
 			<price>500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">36-40</param>
@@ -3055,7 +3053,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=196365913966</url>
 			<price>500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">41-44</param>
@@ -3073,7 +3071,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=865879656774</url>
 			<price>500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">45-46</param>
@@ -3091,7 +3089,7 @@
 			<url>https://dearkids.ru/tproduct/170728994-839504503588-tyurban?editionuid=901982118657</url>
 			<price>500.0000</price>
 			<currencyId>RUB</currencyId>
-			<categoryId>501815263866</categoryId>
+			<categoryId>580688039727</categoryId>
 			<param name="Состав">100% хлопок</param>
 			<param name="Производство">Россия</param>
 			<param name="Размер">47-48</param>
