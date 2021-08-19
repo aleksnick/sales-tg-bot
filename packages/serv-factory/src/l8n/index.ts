@@ -2,6 +2,6 @@ import ru from './locales/ru';
 
 export type Keys = keyof typeof ru;
 
-const l18n = (key: Keys): string => ru[key];
+const l8n = (key: Keys): string => ru[key];
 
-export default l18n;
+export default l8n;

@@ -9,4 +9,10 @@ export class CatalogService {
 
     return categories;
   };
+
+  getWares = () => {
+    const offers = getDataFromTildaYML().offers.offer;
+
+    return offers;
+  };
 }

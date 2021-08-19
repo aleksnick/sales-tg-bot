@@ -1,26 +1,63 @@
-import { MenuTemplate } from 'telegraf-inline-menu';
-import { Category } from 'shared-types';
+import { MenuTemplate, replyMenuToContext } from 'telegraf-inline-menu';
+import _ from 'lodash';
+import { Category, Ware } from 'shared-types';
 import { Context } from 'src/@types/Context';
-// import { MenuStates } from 'src/@types/MenuState';
-// import createCatalogMenu from '../Catalog';
-import categoriesToSelect from '../../utils/categoriesToSelect';
+import { MenuState } from 'src/@types/MenuState';
+import loadPhoto from '../../utils/loadPhoto';
 
-interface Options {
+interface MainMenuOptions {
   categories: Category[];
+  wares: Ware[];
+  state: MenuState,
+  onChangeState: (state: MenuState) => void;
 }
 
-const createMainMenu = ({ categories }: Options) => {
-  const menu = new MenuTemplate<Context>((ctx) => `Hey ${ctx.from?.first_name}!`);
+let hide = true;
 
-  let selectedKey = 'b';
-  menu.select('select', () => categoriesToSelect(categories), {
-    set: async (ctx, key) => {
-      selectedKey = key;
-      await ctx.answerCbQuery(`you selected ${key}`);
-      return true;
-    },
-    isSet: (__, key) => key === selectedKey,
-    columns: 2,
+const createMainMenu = ({ categories, wares }: MainMenuOptions) => {
+  const menu = new MenuTemplate<Context>(() => 'выберите категорию');
+
+  categories.forEach((category) => {
+    const subMenu = new MenuTemplate<Context>(() => category.value);
+
+    menu.submenu(category.value, `category-${category.id}`, subMenu, {
+      joinLastRow: true,
+      hide: () => hide,
+    });
+
+    menu.toggle(category.value, `link-${category.id}`, {
+      set: async (ctx) => {
+        hide = false;
+
+        _.take(wares, 3).forEach(async (ware) => {
+          const wareMenu = new MenuTemplate<Context>(async () => {
+            const photo = await loadPhoto(ware.picture);
+
+            return {
+              type: 'photo',
+              media: {
+                source: photo,
+              },
+              text: ware.name,
+              parse_mode: 'Markdown',
+            };
+          });
+
+          wareMenu.interact('Buy', `link-${ware.id}`, {
+            do: () => {
+              console.log('>>> click');
+
+              return true;
+            },
+          });
+
+          await replyMenuToContext(wareMenu, ctx, `/ware-${ware.id}/`);
+        });
+
+        return `/category-${category.id}/`;
+      },
+      isSet: () => true,
+    });
   });
 
   return menu;
