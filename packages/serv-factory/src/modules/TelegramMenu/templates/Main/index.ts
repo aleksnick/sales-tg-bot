@@ -4,6 +4,9 @@ import { Category, Ware } from 'shared-types';
 import { Context } from 'src/@types/Context';
 import { MenuState } from 'src/@types/MenuState';
 import loadPhoto from '../../utils/loadPhoto';
+import findWares from '../../utils/findWares';
+
+const PREVIEW_LIMIT_IN_CATEGORY = 3;
 
 interface MainMenuOptions {
   categories: Category[];
@@ -12,49 +15,93 @@ interface MainMenuOptions {
   onChangeState: (state: MenuState) => void;
 }
 
-let hide = true;
+// let hide = true;
 
 const createMainMenu = ({ categories, wares }: MainMenuOptions) => {
+  const createWareMenu = (ware: Ware) => {
+    const wareMenu = new MenuTemplate<Context>(async () => {
+      const photo = await loadPhoto(ware.picture);
+
+      return {
+        type: 'photo',
+        media: {
+          source: photo,
+        },
+        text: ware.description,
+        parse_mode: 'Markdown',
+      };
+    });
+
+    return wareMenu;
+  };
+
+  const createWarePreviewMenu = (ware: Ware, category: Category) => {
+    const warePreviewMenu = new MenuTemplate<Context>(async () => {
+      const photo = await loadPhoto(ware.picture);
+
+      return {
+        type: 'photo',
+        media: {
+          source: photo,
+        },
+        text: ware.name,
+        parse_mode: 'Markdown',
+      };
+    });
+
+    const wareMenu = createWareMenu(ware);
+
+    warePreviewMenu.submenu(ware.name, 'offer', wareMenu, {
+      hide: () => false,
+    });
+
+    warePreviewMenu.toggle(`${ware.price}₽`, 'link', {
+      set: async () => {
+        console.log('>>> click warePreviewMenu', `/category-${category.id}/ware-${ware.id}/offer/`);
+        // const wareOfferMenu = createWareMenu(ware);
+        // await replyMenuToContext(wareOfferMenu, ctx,
+        // `/category-${category.id}/ware-${ware.id}/offer/`);
+
+        return true;
+      },
+      isSet: () => true,
+    });
+
+    return warePreviewMenu;
+  };
+
+  console.log(createWareMenu);
+
   const menu = new MenuTemplate<Context>(() => 'выберите категорию');
 
   categories.forEach((category) => {
-    const subMenu = new MenuTemplate<Context>(() => category.value);
+    const categoryMenu = new MenuTemplate<Context>(() => category.value);
+    const waresInCategory = findWares(wares, category);
 
-    menu.submenu(category.value, `category-${category.id}`, subMenu, {
-      joinLastRow: true,
-      hide: () => hide,
+    waresInCategory.forEach((ware) => {
+      const warePreviewMenu = createWarePreviewMenu(ware, category);
+
+      categoryMenu.submenu(ware.name, `ware-${ware.id}`, warePreviewMenu, {
+        hide: () => false,
+      });
+    });
+
+    menu.submenu(category.value, `category-${category.id}`, categoryMenu, {
+      hide: () => true,
     });
 
     menu.toggle(category.value, `link-${category.id}`, {
       set: async (ctx) => {
-        hide = false;
+        // hide = false;
 
-        _.take(wares, 3).forEach(async (ware) => {
-          const wareMenu = new MenuTemplate<Context>(async () => {
-            const photo = await loadPhoto(ware.picture);
+        _.take(waresInCategory, PREVIEW_LIMIT_IN_CATEGORY).forEach(async (ware) => {
+          const warePreviewMenu = createWarePreviewMenu(ware, category);
+          console.log('>>> click category', `/category-${category.id}/ware-${ware.id}/`);
 
-            return {
-              type: 'photo',
-              media: {
-                source: photo,
-              },
-              text: ware.name,
-              parse_mode: 'Markdown',
-            };
-          });
-
-          wareMenu.interact('Buy', `link-${ware.id}`, {
-            do: () => {
-              console.log('>>> click');
-
-              return true;
-            },
-          });
-
-          await replyMenuToContext(wareMenu, ctx, `/ware-${ware.id}/`);
+          await replyMenuToContext(warePreviewMenu, ctx, `/category-${category.id}/ware-${ware.id}/`);
         });
 
-        return `/category-${category.id}/`;
+        return true;
       },
       isSet: () => true,
     });

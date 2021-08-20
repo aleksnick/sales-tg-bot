@@ -28,6 +28,8 @@ export class TelegramMenuService {
     bot.command('start', async (ctx, next) => {
       await menuMiddleware.replyToContext(ctx);
 
+      console.log(menuMiddleware.tree());
+
       next();
     });
 
