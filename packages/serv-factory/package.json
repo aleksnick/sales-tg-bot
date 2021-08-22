@@ -28,7 +28,8 @@
     "shared-types": "1.0.0",
     "shared-utils": "^1.0.0",
     "telegraf": "4.4.0",
-    "telegraf-inline-menu": "6.3.0"
+    "telegraf-inline-menu": "6.3.0",
+    "telegraf-session-local": "2.1.0"
   },
   "devDependencies": {
     "@types/express": "4.17.13",
