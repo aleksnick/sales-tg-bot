@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { BotOptions } from 'src/@types/Bot';
-import { TelegramSessionService } from 'src/modules/TelegramSession/telegramSession.service';
-import { TelegramMenuService } from 'src/modules/TelegramMenu/telegramMenu.service';
-import { TelegramPhrasesService } from 'src/modules/TelegramPhrases/telegramPhrases.service';
+import { TelegramSessionService } from './modules/TelegramSession/telegramSession.service';
+import { TelegramMenuService } from './modules/TelegramMenu/telegramMenu.service';
+import { TelegramPhrasesService } from './modules/TelegramPhrases/telegramPhrases.service';
 import TelegramBot from './models/TelegramBot';
 
 @Injectable()
