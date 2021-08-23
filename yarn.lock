@@ -2351,6 +2351,13 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
+telegraf-ctx-menu@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/telegraf-ctx-menu/-/telegraf-ctx-menu-1.1.4.tgz#52fa340a1f127c18a094fd9c2767427f2872c5f3"
+  integrity sha512-1eU0WsQ/ydkrKEU41/REASHdOKRT4B6THTFoolmPu96dBIRykKG4O5TZu0RT45UYdi+KV02BFjpjZKsSpajb7g==
+  dependencies:
+    telegraf "^4.4.1"
+
 telegraf-inline-menu@6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/telegraf-inline-menu/-/telegraf-inline-menu-6.3.0.tgz#e9cedb2086f482e9d95e3f03def6895cd69928ff"
@@ -2366,10 +2373,10 @@ telegraf-session-local@2.1.0:
     "@types/lowdb" "^1.0.9"
     lowdb "^1.0.0"
 
-telegraf@4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-4.4.0.tgz#a84228664a252062036b328fc364b5662ba3d22d"
-  integrity sha512-DjVVEz37/5Hp0n8eLhAVjErwoyrWsqLyFAoRj8sU5XiD2CVAbBOx9J6a7cLn/B46pPgDqgbrdjiOeK0fQMiLOA==
+telegraf@4.4.1, telegraf@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-4.4.1.tgz#f7a9c82db17417149494aa63f9956e3484ffdcf6"
+  integrity sha512-jxV8fC/K6abcUTlhy/l8txJAmEJIkJoDu/cN0yXOJWLp9csfLIp+cD4qlwJ6ko+4EgOJmNZvWK7Tr2dxKolJQQ==
   dependencies:
     abort-controller "^3.0.0"
     debug "^4.3.1"
@@ -2379,7 +2386,7 @@ telegraf@4.4.0:
     p-timeout "^4.1.0"
     safe-compare "^1.1.4"
     sandwich-stream "^2.0.2"
-    typegram "^3.4.0"
+    typegram "^3.4.2"
 
 text-table@^0.2.0:
   version "0.2.0"
@@ -2454,7 +2461,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typegram@^3.0.2, typegram@^3.4.0:
+typegram@^3.0.2, typegram@^3.4.2:
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/typegram/-/typegram-3.4.3.tgz#a1e212beaf6b43079a3774457b40d6eab1a93acf"
   integrity sha512-pH0TQJzCWM2+7y6yiBoQVNt7PO9ZvAu/lQukVx4sm68FIBBZEBWI+2MzuMcdbwrD5mD5NrEMAyml9N6DupUZag==
