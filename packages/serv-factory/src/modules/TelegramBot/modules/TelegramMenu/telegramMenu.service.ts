@@ -1,99 +1,53 @@
 import { Injectable } from '@nestjs/common';
-import { MenuFactory } from 'telegraf-ctx-menu';
-import { Context } from 'src/@types/Context';
+// import { Context } from 'src/@types/Context';
+import { MenuMiddleware } from 'lib-telegraf-inline-menu';
 import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
-// import { CatalogService } from 'src/modules/Catalog/catalog.service';
-// import { MenuStates } from 'src/@types/MenuState';
+import { CatalogService } from 'src/modules/Catalog/catalog.service';
+import { MenuStates, MenuState } from 'src/@types/MenuState';
+import createMainMenu from './templates/Main';
 
 @Injectable()
 export class TelegramMenuService {
-  // private state: MenuState = MenuStates.MAIN;
+  private state: MenuState = MenuStates.MAIN;
 
-  // constructor(private readonly catalogService: CatalogService) {}
+  constructor(private readonly catalogService: CatalogService) {}
 
   registr = (bot: TelegramBotWorker) => {
-    const menuFactory = new MenuFactory<Context>();
+    const categories = this.catalogService.getCategories();
+    const wares = this.catalogService.getWares();
 
-    const subMenu2 = menuFactory.menu({
-      command: 'sub2',
-      parseMode: 'MarkdownV2',
-      description: 'View your available items 2',
-      dialogFunction: () => 'qwerty 2',
-      buttons: [
-        {
-          label: 'Go 2',
-          action: (ctx) => {
-            ctx.answerCbQuery();
-          },
-        },
-      ],
+    const menu = createMainMenu({
+      categories,
+      wares,
+      state: this.state,
+      onChangeState: this.changeState,
     });
 
-    const subMenu = menuFactory.menu({
-      command: 'sub',
-      parseMode: 'MarkdownV2',
-      description: 'View your available items 1',
-      dialogFunction: () => 'qwerty',
-      buttons: [
-        {
-          label: 'Go',
-          action: (ctx) => {
-            ctx.answerCbQuery();
-            subMenu2.send(ctx);
-            return {
-              markup: 2,
-            };
-          },
-        },
-      ],
+    const menuMiddleware = new MenuMiddleware('/', menu);
+    console.log(menuMiddleware.tree());
+
+    bot.command('start', async (ctx, next) => {
+      await menuMiddleware.replyToContext(ctx);
+      next();
     });
 
-    const itemsMenu = menuFactory.menu({
-      command: 'start',
-      parseMode: 'MarkdownV2',
-      description: 'View your available items',
-      dialogFunction: () => 'Hello, here is where you select your items',
-      buttons: [
-        [
-          {
-            label: 'Add item',
-            action: (ctx) => {
-              ctx.answerCbQuery();
-              ctx.reply('You have added an item');
-            },
-          },
-          {
-            label: 'Remove item',
-            action: (ctx) => {
-              ctx.answerCbQuery();
-            },
-            promptAction: (ctx) => {
-              console.log('ctx', ctx);
-            },
-          },
-        ],
-        [
-          {
-            label: 'Cancel',
-            action: (ctx) => {
-              ctx.answerCbQuery();
-              subMenu.send(ctx);
-              // ctx.state.newSubmenu
-              // return {
-              //   markup: 2,
-              // };
-            },
-          },
-        ],
-      ],
+    bot.command('go', async (ctx, next) => {
+      await menuMiddleware.replyToContext(ctx);
+      next();
     });
 
-    itemsMenu.register(bot);
-    subMenu.register(bot);
-    subMenu2.register(bot);
+    bot.use((ctx, next) => {
+      if (ctx.callbackQuery) {
+        console.log('callback data just happened', ctx.callbackQuery);
+      }
+
+      return next();
+    });
+
+    bot.use(menuMiddleware.middleware());
   };
 
-  // changeState = (newState: MenuStates) => {
-  //   this.state = newState;
-  // };
+  changeState = (newState: MenuStates) => {
+    this.state = newState;
+  };
 }

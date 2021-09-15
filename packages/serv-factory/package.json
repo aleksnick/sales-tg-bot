@@ -16,11 +16,13 @@
   "author": "aleksnick",
   "license": "MIT",
   "dependencies": {
+    "@edjopato/telegraf-i18n": "^0.2.2",
     "@nestjs/common": "^8.0.6",
     "@nestjs/core": "^8.0.6",
     "@nestjs/platform-express": "^8.0.6",
     "dotenv": "10.0.0",
     "express": "4.17.1",
+    "lib-telegraf-inline-menu": "6.3.0",
     "lodash": "4.17.21",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.3.0",
@@ -28,8 +30,6 @@
     "shared-types": "1.0.0",
     "shared-utils": "^1.0.0",
     "telegraf": "4.4.1",
-    "telegraf-ctx-menu": "1.1.4",
-    "telegraf-inline-menu": "6.3.0",
     "telegraf-session-local": "2.1.0"
   },
   "devDependencies": {

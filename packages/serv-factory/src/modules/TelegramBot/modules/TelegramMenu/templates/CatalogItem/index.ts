@@ -1,4 +1,4 @@
-import { MenuTemplate } from 'telegraf-inline-menu';
+import { MenuTemplate } from 'lib-telegraf-inline-menu';
 import { Context } from 'src/@types/Context';
 import { MenuStates } from 'src/@types/MenuState';
 
