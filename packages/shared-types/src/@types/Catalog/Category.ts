@@ -1,4 +1,6 @@
+export type CategoryId = number;
+
 export interface Category {
-  id: number;
+  id: Category;
   value: string;
 }

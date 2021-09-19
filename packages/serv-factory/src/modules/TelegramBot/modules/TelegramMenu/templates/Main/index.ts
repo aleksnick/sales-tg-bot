@@ -1,12 +1,22 @@
-import { MenuTemplate } from 'lib-telegraf-inline-menu';
 import _ from 'lodash';
-import { Category, Ware } from 'shared-types';
-import { Context } from 'src/@types/Context';
+import {
+  Category, CategoryId, Ware, WareId,
+} from 'shared-types';
 import { MenuState } from 'src/@types/MenuState';
-import loadPhoto from '../../utils/loadPhoto';
+import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
 import findWares from '../../utils/findWares';
 
-const PREVIEW_LIMIT_IN_CATEGORY = 1;
+const PREVIEW_LIMIT_IN_CATEGORY = 3;
+
+interface ShowCategory {
+  action: 'SHOW_CATEGORY';
+  categoryId: CategoryId;
+}
+
+interface ShowWare {
+  action: 'SHOW_WARE';
+  wareId: WareId;
+}
 
 interface MainMenuOptions {
   categories: Category[];
@@ -15,123 +25,111 @@ interface MainMenuOptions {
   onChangeState: (state: MenuState) => void;
 }
 
-// let hide = true;
+const createMainMenu = (bot: TelegramBotWorker, { categories, wares }: MainMenuOptions) => {
+  const categoryKeyboard = categories.map((category) => ({
+    text: category.value,
+    callback_data: JSON.stringify({
+      action: 'SHOW_CATEGORY',
+      categoryId: category.id,
+    }),
+  }));
 
-const createMainMenu = ({ categories, wares }: MainMenuOptions) => {
-  const createWareMenu = (ware: Ware) => {
-    const wareMenu = new MenuTemplate<Context>(async () => {
-      const photo = await loadPhoto(ware.picture);
-
-      return {
-        type: 'photo',
-        media: {
-          source: photo,
+  bot.command('go', async (ctx, next) => {
+    await ctx.reply('выберите категорию',
+      {
+        reply_markup: {
+          resize_keyboard: true,
+          inline_keyboard: _.chunk(categoryKeyboard, 2),
         },
-        text: ware.name,
-        parse_mode: 'Markdown',
-      };
-    });
-
-    return wareMenu;
-  };
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const createWarePreviewMenu = (ware: Ware, _category: Category) => {
-    const warePreviewMenu = new MenuTemplate<Context>(async () => {
-      const photo = await loadPhoto(ware.picture);
-
-      return {
-        type: 'photo',
-        media: {
-          source: photo,
-        },
-        text: ware.name,
-        parse_mode: 'Markdown',
-      };
-    });
-
-    const wareMenu = createWareMenu(ware);
-
-    // warePreviewMenu.manualAction(/offer/, (ctx) => {
-    //   console.log('>>> action', ctx);
-
-    //   return true;
-    // });
-
-    warePreviewMenu.submenu(`${ware.name} -> offer`, 'offer', wareMenu, {
-      hide: () => false,
-    });
-
-    // warePreviewMenu.interact(`${ware.price}₽`, 'link', {
-    //   do: async (ctx) => {
-    //     await ctx.answerCbQuery(`/ware-${ware.id}/offer/`);
-
-    //     console.log('>>> click warePreviewMenu', `/ware-${ware.id}/offer/`);
-    //     // const wareOfferMenu = createWareMenu(ware);
-    //     // await replyMenuToContext(wareOfferMenu, ctx,
-    //     // `/category-${category.id}/ware-${ware.id}/offer/`);
-
-    //     return true;
-    //   },
-    // });
-
-    return warePreviewMenu;
-  };
-
-  const menu = new MenuTemplate<Context>(() => 'выберите категорию');
-
-  categories.forEach((category) => {
-    const categoryMenu = new MenuTemplate<Context>(() => category.value);
-    const waresInCategory = findWares(wares, category);
-
-    _.take(waresInCategory, PREVIEW_LIMIT_IN_CATEGORY).forEach((ware) => {
-      const warePreviewMenu = createWarePreviewMenu(ware, category);
-
-      // categoryMenu.renderBody(async () => {
-      //   const photo = await loadPhoto(ware.picture);
-
-      //   return {
-      //     type: 'photo',
-      //     media: {export
-      //       source: photo,
-      //     },
-      //     text: ware.name,
-      //     parse_mode: 'Markdown',
-      //   };
-      // });
-
-      categoryMenu.submenu(ware.name, `ware-${ware.id}`, warePreviewMenu, {
-        hide: () => false,
       });
-    });
-
-    menu.submenu(category.value, `category-${category.id}`, categoryMenu, {
-      hide: () => false,
-    });
-
-    // menu.interact(category.value, `link-${category.id}`, {
-    //   do: async (ctx) => {
-    //     // hide = false;
-    //     await ctx.answerCbQuery(`category-${category.id}`);
-
-    //     _.take(waresInCategory, PREVIEW_LIMIT_IN_CATEGORY).forEach(async (ware) => {
-    //       const warePreviewMenu = createWarePreviewMenu(ware, category);
-
-    //       await replyMenuToContext(warePreviewMenu, ctx, `/ware-${ware.id}/`);
-    //     });
-
-    //     return true;
-    //   },
-    // });
+    next();
   });
 
-  // menu.manualAction(/category/, (ctx) => {
-  //   console.log('>>> action', ctx);
+  bot.action(/action/, async (ctx, next) => {
+    let categoryId: CategoryId;
 
-  //   return true;
-  // });
+    try {
+      const data = JSON.parse(ctx.match.input) as ShowCategory;
 
-  return menu;
+      if (data.action !== 'SHOW_CATEGORY') {
+        throw new Error('not a SHOW_CATEGORY');
+      }
+
+      categoryId = data.categoryId;
+    } catch {
+      next();
+      return;
+    }
+
+    const waresInCategory = findWares(wares, categoryId);
+    console.log('>>> action', categoryId, wares[0]);
+
+    _.take(waresInCategory, PREVIEW_LIMIT_IN_CATEGORY).forEach(async (ware) => {
+      await ctx.replyWithPhoto(ware.picture,
+        {
+          reply_markup: {
+            inline_keyboard: [
+              [
+                {
+                  text: ware.name,
+                  callback_data: JSON.stringify({
+                    action: 'SHOW_WARE',
+                    wareId: ware.id,
+                  }),
+                },
+              ],
+            ],
+          },
+        });
+    });
+
+    next();
+  });
+
+  bot.action(/action/, async (ctx, next) => {
+    let wareId: WareId;
+
+    try {
+      const data = JSON.parse(ctx.match.input) as ShowWare;
+
+      if (data.action !== 'SHOW_WARE') {
+        throw new Error('not a SHOW_WARE');
+      }
+
+      wareId = data.wareId;
+    } catch {
+      next();
+      return;
+    }
+
+    const ware = wares.find((w) => w.id === wareId);
+
+    if (!ware) {
+      next();
+      return;
+    }
+
+    await ctx.replyWithPhoto(ware.picture);
+
+    await ctx.reply(ware.description,
+      {
+        reply_markup: {
+          inline_keyboard: [
+            [
+              {
+                text: `${ware.price}₽`,
+                callback_data: JSON.stringify({
+                  action: 'ADD_TO_CART',
+                  wareId: ware.id,
+                }),
+              },
+            ],
+          ],
+        },
+      });
+
+    next();
+  });
 };
 
 export default createMainMenu;

@@ -1,4 +1,6 @@
+export type CurrencyId = number;
+
 export interface Currency {
-  id: string;
+  id: CurrencyId;
   rate: number;
 }
