@@ -1,24 +1,28 @@
 import { Injectable } from '@nestjs/common';
 import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
 import { CatalogService } from 'src/modules/Catalog/catalog.service';
-import { MenuStates, MenuState } from 'src/@types/MenuState';
-import createMainMenu from './templates/Main';
+import { TelegramMainMenuService } from './modules/TelegramMainMenu/telegramMainMenu.service';
+import { TelegramWareMenuService } from './modules/TelegramWareMenu/telegramWareMenu.service';
 
 @Injectable()
 export class TelegramMenuService {
-  private state: MenuState = MenuStates.MAIN;
-
-  constructor(private readonly catalogService: CatalogService) {}
+  constructor(
+    private readonly catalogService: CatalogService,
+    private telegramMainMenuService: TelegramMainMenuService,
+    private telegramWareMenuService: TelegramWareMenuService,
+  ) {}
 
   registr = (bot: TelegramBotWorker) => {
     const categories = this.catalogService.getCategories();
     const wares = this.catalogService.getWares();
 
-    createMainMenu(bot, {
+    this.telegramMainMenuService.createMenu(bot, {
       categories,
       wares,
-      state: this.state,
-      onChangeState: this.changeState,
+    });
+
+    this.telegramWareMenuService.createMenu(bot, {
+      wares,
     });
 
     bot.use((ctx, next) => {
@@ -28,9 +32,5 @@ export class TelegramMenuService {
 
       return next();
     });
-  };
-
-  changeState = (newState: MenuStates) => {
-    this.state = newState;
   };
 }
