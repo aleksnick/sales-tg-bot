@@ -1,11 +1,14 @@
 import { Injectable } from '@nestjs/common';
-import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
 import { Ware, WareId } from 'shared-types';
-
-interface ShowWare {
-  action: 'SHOW_WARE';
-  wareId: WareId;
-}
+import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
+import {
+  MenuActions,
+  ShowCategory,
+  ShowWare,
+  ShowCart,
+  AddToCart,
+  AddToFavorite,
+} from 'src/modules/TelegramBot/modules/TelegramMenu/@types/Actions';
 
 interface WareMenuOptions {
   wares: Ware[];
@@ -20,13 +23,14 @@ export class TelegramWareMenuService {
       try {
         const data = JSON.parse(ctx.match.input) as ShowWare;
 
-        if (data.action !== 'SHOW_WARE') {
-          throw new Error('not a SHOW_WARE');
+        if (data.action !== MenuActions.SHOW_WARE) {
+          throw new Error(`not a ${MenuActions.SHOW_WARE}`);
         }
 
         wareId = data.wareId;
       } catch {
         next();
+
         return;
       }
 
@@ -34,23 +38,45 @@ export class TelegramWareMenuService {
 
       if (!ware) {
         next();
+
         return;
       }
 
       await ctx.reply(ware.name);
 
-      await ctx.replyWithPhoto(ware.picture);
-
-      await ctx.reply(ware.description, {
+      await ctx.replyWithPhoto(ware.picture, {
+        caption: ware.description,
         reply_markup: {
           inline_keyboard: [
             [
               {
-                text: `${ware.price}₽`,
+                text: `🛍 ${ware.price}₽`,
                 callback_data: JSON.stringify({
-                  action: 'ADD_TO_CART',
+                  action: MenuActions.ADD_TO_CART,
                   wareId: ware.id,
-                }),
+                } as AddToCart),
+              },
+              {
+                text: '❤️',
+                callback_data: JSON.stringify({
+                  action: MenuActions.ADD_TO_FAVORITE,
+                  wareId: ware.id,
+                } as AddToFavorite),
+              },
+            ],
+            [
+              {
+                text: '⬅️ Назад',
+                callback_data: JSON.stringify({
+                  action: MenuActions.SHOW_CATEGORY,
+                  categoryId: ware.categoryId,
+                } as ShowCategory),
+              },
+              {
+                text: '🛒 Корзина (0)',
+                callback_data: JSON.stringify({
+                  action: MenuActions.SHOW_CART,
+                } as ShowCart),
               },
             ],
           ],

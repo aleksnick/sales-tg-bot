@@ -1,16 +1,19 @@
 import { Injectable } from '@nestjs/common';
 import _ from 'lodash';
-import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
 import { Category, CategoryId, Ware } from 'shared-types';
-
-import findWares from '../../utils/findWares';
+import { findWaresByCategoryId } from 'shared-utils';
+import { Context } from 'src/@types/Context';
+import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
+import {
+  MenuActions,
+  ShowCategory,
+  ShowCart,
+  ShowFavorite,
+  ShowWare,
+  ShowMain,
+} from 'src/modules/TelegramBot/modules/TelegramMenu/@types/Actions';
 
 const PREVIEW_LIMIT_IN_CATEGORY = 3;
-
-interface ShowCategory {
-  action: 'SHOW_CATEGORY';
-  categoryId: CategoryId;
-}
 
 interface MainMenuOptions {
   categories: Category[];
@@ -23,22 +26,43 @@ export class TelegramMainMenuService {
     bot: TelegramBotWorker,
     { categories, wares }: MainMenuOptions,
   ) => {
-    const categoryKeyboard = categories.map((category) => ({
-      text: category.value,
-      callback_data: JSON.stringify({
-        action: 'SHOW_CATEGORY',
-        categoryId: category.id,
-      }),
-    }));
+    const onStart = async (ctx: Context, next: () => void) => {
+      const categoryKeyboard = categories.map((category) => ({
+        text: category.value,
+        callback_data: JSON.stringify({
+          action: MenuActions.SHOW_CATEGORY,
+          categoryId: category.id,
+        } as ShowCategory),
+      }));
 
-    bot.command('go', async (ctx, next) => {
       await ctx.reply('выберите категорию', {
         reply_markup: {
           resize_keyboard: true,
           inline_keyboard: _.chunk(categoryKeyboard, 2),
         },
       });
+
       next();
+    };
+
+    bot.start(onStart);
+
+    bot.command('go', onStart);
+
+    bot.action(/action/, async (ctx, next) => {
+      try {
+        const data = JSON.parse(ctx.match.input) as ShowMain;
+
+        if (data.action !== MenuActions.SHOW_MAIN) {
+          throw new Error(`not a ${MenuActions.SHOW_MAIN}`);
+        }
+      } catch {
+        next();
+
+        return;
+      }
+
+      onStart(ctx, next);
     });
 
     bot.action(/action/, async (ctx, next) => {
@@ -47,30 +71,58 @@ export class TelegramMainMenuService {
       try {
         const data = JSON.parse(ctx.match.input) as ShowCategory;
 
-        if (data.action !== 'SHOW_CATEGORY') {
-          throw new Error('not a SHOW_CATEGORY');
+        if (data.action !== MenuActions.SHOW_CATEGORY) {
+          throw new Error(`not a ${MenuActions.SHOW_CATEGORY}`);
         }
 
         categoryId = data.categoryId;
       } catch {
         next();
+
         return;
       }
 
-      const waresInCategory = findWares(wares, categoryId);
+      const waresInCategory = findWaresByCategoryId(wares, categoryId);
 
       _.take(waresInCategory, PREVIEW_LIMIT_IN_CATEGORY).forEach(
         async (ware) => {
           await ctx.replyWithPhoto(ware.picture, {
+            caption: ware.name,
             reply_markup: {
               inline_keyboard: [
                 [
                   {
-                    text: ware.name,
+                    text: `☀️ ${ware.price}₽`,
                     callback_data: JSON.stringify({
-                      action: 'SHOW_WARE',
+                      action: MenuActions.SHOW_WARE,
                       wareId: ware.id,
-                    }),
+                    } as ShowWare),
+                  },
+                ],
+                [
+                  {
+                    text: '⬅️',
+                    callback_data: JSON.stringify({
+                      action: MenuActions.SHOW_MAIN,
+                    } as ShowMain),
+                  },
+                  {
+                    text: '🛒',
+                    callback_data: JSON.stringify({
+                      action: MenuActions.SHOW_CART,
+                    } as ShowCart),
+                  },
+                  {
+                    text: '❤️',
+                    callback_data: JSON.stringify({
+                      action: MenuActions.SHOW_FAVORITE,
+                    } as ShowFavorite),
+                  },
+                  {
+                    text: '➡️',
+                    callback_data: JSON.stringify({
+                      action: MenuActions.SHOW_MAIN,
+                    } as ShowMain),
                   },
                 ],
               ],
