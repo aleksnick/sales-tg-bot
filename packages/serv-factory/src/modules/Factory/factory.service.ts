@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { BotTypes } from 'shared-types';
 import { Bot } from 'src/@types/Bot';
 import { CreateOptions } from 'src/@types/CreateOptions';
@@ -8,6 +8,8 @@ type Bots = { [id: string]: Bot };
 
 @Injectable()
 export class FactoryService {
+  private readonly logger = new Logger(FactoryService.name);
+
   private readonly bots: Bots = {};
 
   constructor(private readonly telegramBotService: TelegramBotService) {}
@@ -18,7 +20,12 @@ export class FactoryService {
         return;
       }
 
-      console.log('bot', id, type, BotTypes.TELEGRAM, options);
+      this.logger.debug('create bot', {
+        id,
+        type,
+        options,
+      });
+
       if (type === BotTypes.TELEGRAM) {
         const bot = this.telegramBotService.createBot({
           id,
@@ -30,7 +37,5 @@ export class FactoryService {
         this.bots[id] = bot;
       }
     });
-
-    console.log('bots', this.bots);
   };
 }

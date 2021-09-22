@@ -1,12 +1,14 @@
+import { Logger } from '@nestjs/common';
 import { Telegraf } from 'telegraf';
 import { Context } from 'src/@types/Context';
-// import { getDataFromTildaYML } from 'shared';
 import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
 import { Bot, BotOptions } from 'src/@types/Bot';
 
 export interface TelegramBotOptions extends BotOptions {}
 
 class TelegramBot implements Bot {
+  private readonly logger = new Logger(TelegramBot.name);
+
   public bot: TelegramBotWorker;
 
   constructor({ token }: TelegramBotOptions) {
@@ -17,7 +19,7 @@ class TelegramBot implements Bot {
     });
 
     bot.catch((error) => {
-      console.log('telegraf error', error);
+      this.logger.error('telegraf error', error);
     });
 
     this.bot = bot;
@@ -31,10 +33,9 @@ class TelegramBot implements Bot {
     }
 
     await bot.launch();
-    console.log(new Date(), `Bot started as '${bot.botInfo?.username}'`);
+
+    this.logger.verbose(`Bot started as '${bot.botInfo?.username}'`);
   };
 }
 
 export default TelegramBot;
-
-// console.log('data', getDataFromTildaYML().offers.offer[0]);

@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { TelegramBotWorker } from 'src/@types/TelegramBotWorker';
 import { CatalogService } from 'src/modules/Catalog/catalog.service';
 import { TelegramMainMenuService } from './modules/TelegramMainMenu/telegramMainMenu.service';
@@ -6,6 +6,8 @@ import { TelegramWareMenuService } from './modules/TelegramWareMenu/telegramWare
 
 @Injectable()
 export class TelegramMenuService {
+  private readonly logger = new Logger(TelegramMenuService.name);
+
   constructor(
     private readonly catalogService: CatalogService,
     private telegramMainMenuService: TelegramMainMenuService,
@@ -27,7 +29,7 @@ export class TelegramMenuService {
 
     bot.use((ctx, next) => {
       if (ctx.callbackQuery) {
-        console.log('callback data just happened', ctx.callbackQuery);
+        this.logger.debug('callback data just happened', ctx.callbackQuery);
       }
 
       return next();
