@@ -43,10 +43,26 @@ export class TelegramWareMenuService {
 
       await ctx.reply(ware.name);
 
+      const sizesMenu = [
+        {
+          text: '✅ S',
+          callback_data: JSON.stringify({}),
+        },
+        {
+          text: 'M',
+          callback_data: JSON.stringify({}),
+        },
+        {
+          text: 'L',
+          callback_data: JSON.stringify({}),
+        },
+      ];
+
       await ctx.replyWithPhoto(ware.picture, {
         caption: ware.description,
         reply_markup: {
           inline_keyboard: [
+            sizesMenu,
             [
               {
                 text: `🛍 ${ware.price}₽`,
@@ -75,6 +91,42 @@ export class TelegramWareMenuService {
           ],
         },
       });
+
+      next();
+    });
+
+    bot.action(/action/, async (ctx, next) => {
+      try {
+        const data = JSON.parse(ctx.match.input) as AddToCart;
+
+        if (data.action !== MenuActions.ADD_TO_CART) {
+          throw new Error(`not a ${MenuActions.ADD_TO_CART}`);
+        }
+      } catch {
+        next();
+
+        return;
+      }
+
+      await ctx.answerCbQuery('Товар добавлен в корзину');
+
+      next();
+    });
+
+    bot.action(/action/, async (ctx, next) => {
+      try {
+        const data = JSON.parse(ctx.match.input) as AddToFavorite;
+
+        if (data.action !== MenuActions.ADD_TO_FAVORITE) {
+          throw new Error(`not a ${MenuActions.ADD_TO_FAVORITE}`);
+        }
+      } catch {
+        next();
+
+        return;
+      }
+
+      await ctx.answerCbQuery('Товар добавлен в избранное');
 
       next();
     });

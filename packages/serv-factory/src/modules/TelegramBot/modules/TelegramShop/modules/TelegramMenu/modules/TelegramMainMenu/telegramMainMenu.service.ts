@@ -62,6 +62,8 @@ export class TelegramMainMenuService {
         return;
       }
 
+      await ctx.answerCbQuery();
+
       onStart(ctx, next);
     });
 
@@ -85,7 +87,36 @@ export class TelegramMainMenuService {
       const waresInCategory = findWaresByCategoryId(wares, categoryId);
 
       _.take(waresInCategory, PREVIEW_LIMIT_IN_CATEGORY).forEach(
-        async (ware) => {
+        async (ware, index) => {
+          const bottomMenu = PREVIEW_LIMIT_IN_CATEGORY === index + 1
+            ? [
+              {
+                text: '⬅️',
+                callback_data: JSON.stringify({
+                  action: MenuActions.SHOW_MAIN,
+                } as ShowMain),
+              },
+              {
+                text: '🛒',
+                callback_data: JSON.stringify({
+                  action: MenuActions.SHOW_CART,
+                } as ShowCart),
+              },
+              {
+                text: '❤️',
+                callback_data: JSON.stringify({
+                  action: MenuActions.SHOW_FAVORITE,
+                } as ShowFavorite),
+              },
+              {
+                text: '➡️',
+                callback_data: JSON.stringify({
+                  action: MenuActions.SHOW_MAIN,
+                } as ShowMain),
+              },
+            ]
+            : [];
+
           await ctx.replyWithPhoto(ware.picture, {
             caption: ware.name,
             reply_markup: {
@@ -99,37 +130,48 @@ export class TelegramMainMenuService {
                     } as ShowWare),
                   },
                 ],
-                [
-                  {
-                    text: '⬅️',
-                    callback_data: JSON.stringify({
-                      action: MenuActions.SHOW_MAIN,
-                    } as ShowMain),
-                  },
-                  {
-                    text: '🛒',
-                    callback_data: JSON.stringify({
-                      action: MenuActions.SHOW_CART,
-                    } as ShowCart),
-                  },
-                  {
-                    text: '❤️',
-                    callback_data: JSON.stringify({
-                      action: MenuActions.SHOW_FAVORITE,
-                    } as ShowFavorite),
-                  },
-                  {
-                    text: '➡️',
-                    callback_data: JSON.stringify({
-                      action: MenuActions.SHOW_MAIN,
-                    } as ShowMain),
-                  },
-                ],
+                bottomMenu,
               ],
             },
           });
         },
       );
+
+      next();
+    });
+
+    bot.action(/action/, async (ctx, next) => {
+      try {
+        const data = JSON.parse(ctx.match.input) as ShowCart;
+
+        if (data.action !== MenuActions.SHOW_CART) {
+          throw new Error(`not a ${MenuActions.SHOW_CART}`);
+        }
+      } catch {
+        next();
+
+        return;
+      }
+
+      await ctx.answerCbQuery('Корзина');
+
+      next();
+    });
+
+    bot.action(/action/, async (ctx, next) => {
+      try {
+        const data = JSON.parse(ctx.match.input) as ShowFavorite;
+
+        if (data.action !== MenuActions.SHOW_FAVORITE) {
+          throw new Error(`not a ${MenuActions.SHOW_FAVORITE}`);
+        }
+      } catch {
+        next();
+
+        return;
+      }
+
+      await ctx.answerCbQuery('Избранное');
 
       next();
     });
