@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { BotTypes } from 'shared-types';
+import { BotChannels } from 'shared-types';
 import { Bot } from 'src/@types/Bot';
 import { CreateOptions } from 'src/@types/CreateOptions';
 import { TelegramBotService } from 'src/modules/TelegramBot/telegramBot.service';
@@ -15,18 +15,18 @@ export class FactoryService {
   constructor(private readonly telegramBotService: TelegramBotService) {}
 
   createBots = async (config: CreateOptions[]): Promise<void> => {
-    config.forEach(async ({ id, type, ...options }) => {
+    config.forEach(async ({ id, channel, ...options }) => {
       if (this.bots[id]) {
         return;
       }
 
       this.logger.debug('create bot', {
         id,
-        type,
+        channel,
         options,
       });
 
-      if (type === BotTypes.TELEGRAM) {
+      if (channel === BotChannels.TELEGRAM) {
         const bot = this.telegramBotService.createBot({
           id,
           ...options,

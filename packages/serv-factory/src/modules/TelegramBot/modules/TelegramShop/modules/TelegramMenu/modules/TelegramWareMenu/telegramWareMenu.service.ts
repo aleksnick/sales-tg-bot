@@ -5,10 +5,9 @@ import {
   MenuActions,
   ShowCategory,
   ShowWare,
-  ShowCart,
   AddToCart,
   AddToFavorite,
-} from 'src/modules/TelegramBot/modules/TelegramMenu/@types/Actions';
+} from '../../@types/Actions';
 
 interface WareMenuOptions {
   wares: Ware[];
@@ -71,12 +70,6 @@ export class TelegramWareMenuService {
                   action: MenuActions.SHOW_CATEGORY,
                   categoryId: ware.categoryId,
                 } as ShowCategory),
-              },
-              {
-                text: '🛒 Корзина (0)',
-                callback_data: JSON.stringify({
-                  action: MenuActions.SHOW_CART,
-                } as ShowCart),
               },
             ],
           ],

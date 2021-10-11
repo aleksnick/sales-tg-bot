@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { BotOptions } from 'src/@types/Bot';
 import { TelegramSessionService } from './modules/TelegramSession/telegramSession.service';
-import { TelegramMenuService } from './modules/TelegramMenu/telegramMenu.service';
+import { TelegramShopService } from './modules/TelegramShop/telegramShop.service';
 import { TelegramPhrasesService } from './modules/TelegramPhrases/telegramPhrases.service';
 import TelegramBot from './models/TelegramBot';
 
@@ -10,14 +10,14 @@ export class TelegramBotService {
   constructor(
     private readonly telegramSessionService: TelegramSessionService,
     private readonly telegramPhrasesService: TelegramPhrasesService,
-    private readonly telegramMenuService: TelegramMenuService,
+    private readonly telegramShopService: TelegramShopService,
   ) {}
 
   createBot = (options: BotOptions) => {
     const telegramBot = new TelegramBot(options);
     this.telegramSessionService.registr(telegramBot.bot);
     this.telegramPhrasesService.registr(telegramBot.bot);
-    this.telegramMenuService.registr(telegramBot.bot);
+    this.telegramShopService.registr(telegramBot.bot);
     return telegramBot;
   };
 }

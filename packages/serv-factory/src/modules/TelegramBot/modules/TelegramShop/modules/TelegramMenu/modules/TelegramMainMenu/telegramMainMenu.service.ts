@@ -11,7 +11,7 @@ import {
   ShowFavorite,
   ShowWare,
   ShowMain,
-} from 'src/modules/TelegramBot/modules/TelegramMenu/@types/Actions';
+} from '../../@types/Actions';
 
 const PREVIEW_LIMIT_IN_CATEGORY = 3;
 

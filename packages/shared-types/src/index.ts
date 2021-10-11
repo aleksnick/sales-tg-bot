@@ -1,4 +1,6 @@
-export { BotType, BotTypes } from './@types/Bots/BotType';
+export {
+  BotType, BotTypes, BotChannel, BotChannels,
+} from './@types/Bots/Bot';
 
 export { Param } from './@types/Catalog/Param';
 export { Ware, WareId } from './@types/Catalog/Ware';

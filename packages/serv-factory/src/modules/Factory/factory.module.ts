@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { BotTypes } from 'shared-types';
+import { BotChannels, BotTypes } from 'shared-types';
 import { TelegramBotModule } from 'src/modules/TelegramBot/telegramBot.module';
 import { FactoryController } from './factory.controller';
 import { FactoryService } from './factory.service';
@@ -14,7 +14,8 @@ export class FactoryModule {
     this.factoryService.createBots([
       {
         id: '1',
-        type: BotTypes.TELEGRAM,
+        channel: BotChannels.TELEGRAM,
+        type: BotTypes.SHOP,
         token: process.env.BOT_TOKEN!,
       },
     ]);
